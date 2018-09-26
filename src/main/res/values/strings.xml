@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">学生管理系统</string>
+    <string name="按钮">按钮</string>
+    <string name="用户名">用户名</string>
+    <string name="id">学号:</string>
+    <string name="password">密  码:</string>
+    <string name="sign_title">注册信息</string>
+</resources>

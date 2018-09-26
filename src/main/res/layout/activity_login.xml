@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@mipmap/home"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160sp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600px"
+        android:layout_height="80sp"
+        android:layout_gravity="center"
+        android:gravity="left|center">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/id"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/User_name"
+            android:layout_width="350px"
+            android:layout_height="40sp"
+            android:layout_gravity="right|center"
+            android:gravity="center"
+            android:hint="请输入ID"
+            android:inputType="number"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600px"
+        android:layout_height="80sp"
+        android:layout_gravity="center"
+        android:gravity="left|center">
+
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/password"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="350px"
+            android:layout_height="40sp"
+            android:layout_gravity="right|center"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600px"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:gravity="right">
+
+        <CheckBox
+            android:id="@+id/checkbox_RMpwd"
+            android:layout_width="97sp"
+            android:layout_height="50sp"
+            android:text="记住密码"
+            android:textSize="12sp"/>
+        <Button
+            android:id="@+id/find_password_button"
+            android:layout_width="97sp"
+            android:layout_height="50sp"
+            android:text="忘记密码？"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="600px"
+        android:layout_height="100sp"
+        android:layout_gravity="center"
+        android:gravity="left|center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="230px"
+                android:layout_height="100px"
+                android:layout_marginRight="15dip"
+                android:background="@mipmap/login" />
+
+            <Button
+                android:id="@+id/sign1"
+                android:layout_width="230px"
+                android:layout_height="100px"
+                android:layout_toRightOf="@+id/login"
+                android:background="@mipmap/sign" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
